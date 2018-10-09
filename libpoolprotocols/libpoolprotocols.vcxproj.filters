@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\json\json_reader.cpp" />
+    <ClCompile Include="..\json\json_value.cpp" />
+    <ClCompile Include="..\json\json_writer.cpp" />
+    <ClCompile Include="PoolManager.cpp" />
+    <ClCompile Include="getwork\EthGetworkClient.cpp">
+      <Filter>getwork</Filter>
+    </ClCompile>
+    <ClCompile Include="testing\SimulateClient.cpp">
+      <Filter>testing</Filter>
+    </ClCompile>
+    <ClCompile Include="getwork\GetWorkClientEx.cpp">
+      <Filter>getwork</Filter>
+    </ClCompile>
+    <ClCompile Include="PoolURI.cpp" />
+    <ClCompile Include="stratum\EthStratumClient.cpp">
+      <Filter>stratum</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PoolClient.h" />
+    <ClInclude Include="PoolManager.h" />
+    <ClInclude Include="getwork\EthGetworkClient.h">
+      <Filter>getwork</Filter>
+    </ClInclude>
+    <ClInclude Include="testing\SimulateClient.h">
+      <Filter>testing</Filter>
+    </ClInclude>
+    <ClInclude Include="getwork\GetWorkClientEx.h">
+      <Filter>getwork</Filter>
+    </ClInclude>
+    <ClInclude Include="PoolURI.h" />
+    <ClInclude Include="stratum\EthStratumClient.h">
+      <Filter>stratum</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="getwork">
+      <UniqueIdentifier>{e4a121ff-3232-42c5-ac23-e2e87b8aa2fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stratum">
+      <UniqueIdentifier>{67966eb9-d0f1-4e6f-a972-57bbb0262193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="testing">
+      <UniqueIdentifier>{a8be1690-f4ef-4cab-8cf6-8f0acf94614d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="getwork\getwork .json">
+      <Filter>getwork</Filter>
+    </None>
+  </ItemGroup>
+</Project>
