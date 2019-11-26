@@ -73,7 +73,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
-    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 10.1.props" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 10.2.props" />
   </ImportGroup>
   <ImportGroup Label="Shared">
   </ImportGroup>
@@ -93,13 +93,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>C:\Data\Data\SS_Projects\Tools\boost_1_66_0;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Data\Data\SS_Projects\Tools\boost_1_66_0\lib64-msvc-14.0;$(LibraryPath)</LibraryPath>
-    <TargetName>wpe.net.miner.ethereum.10.1</TargetName>
+    <TargetName>wpe.net.miner.ethereum.10.2</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>C:\Data\Data\SS_Projects\Tools\boost_1_66_0;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Data\Data\SS_Projects\Tools\boost_1_66_0\lib64-msvc-14.0;$(LibraryPath)</LibraryPath>
     <IntDir>$(Platform)\$(Configuration)\obj\ethminer\</IntDir>
-    <TargetName>wpe.net.miner.ethereum.10.1</TargetName>
+    <TargetName>wpe.net.miner.ethereum.10.2</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -113,11 +113,11 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>false</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include;C:\Data\Data\SS_Projects\Tools\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include;C:\Data\Data\SS_Projects\Tools\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;ETH_ETHASHCUDA;ETH_STRATUM</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>$(TargetDir)libdevcore.lib;$(TargetDir)libethash.lib;$(TargetDir)libethash-cuda.lib;$(TargetDir)libethcore.lib;$(TargetDir)libhwmon.lib;$(TargetDir)libpoolprotocols.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\lib\x64\cudart_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(TargetDir)libdevcore.lib;$(TargetDir)libethash.lib;$(TargetDir)libethash-cuda.lib;$(TargetDir)libethcore.lib;$(TargetDir)libhwmon.lib;$(TargetDir)libpoolprotocols.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\lib\x64\cudart_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ForceFileOutput>
       </ForceFileOutput>
       <IgnoreAllDefaultLibraries>
@@ -152,14 +152,14 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>false</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include;C:\Data\Data\SS_Projects\Tools\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include;C:\Data\Data\SS_Projects\Tools\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;ETH_ETHASHCUDA;ETH_STRATUM</PreprocessorDefinitions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>$(TargetDir)libdevcore.lib;$(TargetDir)libethash.lib;$(TargetDir)libethash-cuda.lib;$(TargetDir)libethcore.lib;$(TargetDir)libhwmon.lib;$(TargetDir)libpoolprotocols.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\lib\x64\cudart_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(TargetDir)libdevcore.lib;$(TargetDir)libethash.lib;$(TargetDir)libethash-cuda.lib;$(TargetDir)libethcore.lib;$(TargetDir)libhwmon.lib;$(TargetDir)libpoolprotocols.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\lib\x64\cudart_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <LargeAddressAware>true</LargeAddressAware>
       <SetChecksum>true</SetChecksum>
     </Link>
@@ -175,6 +175,6 @@ copy $(TargetPath) C:\Data\Data\SS_Projects\Intelligence\WPE.net\wpe.net.app\bin
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 10.1.targets" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 10.2.targets" />
   </ImportGroup>
 </Project>
