@@ -2,4 +2,4 @@
 
 #define ETH_PROJECT_VERSION "1.2"
 #define ETH_BUILD_TYPE "64bit"
-#define ETH_BUILD_PLATFORM "Windows CUDA 10.2.89"
+#define ETH_BUILD_PLATFORM "Windows CUDA 11.0"
