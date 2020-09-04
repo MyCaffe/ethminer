@@ -1,5 +1,5 @@
 #pragma once
 
-#define ETH_PROJECT_VERSION "1.2"
+#define ETH_PROJECT_VERSION "0.11.0.3"
 #define ETH_BUILD_TYPE "64bit"
 #define ETH_BUILD_PLATFORM "Windows CUDA 11.0"
