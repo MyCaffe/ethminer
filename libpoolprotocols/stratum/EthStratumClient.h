@@ -77,7 +77,8 @@ private:
 	int m_worktimeout = 120;
 	
 	// Fixed 2 seconds timeout for a response to a submission of solution
-	int m_responsetimeout = 2;
+	// Increased to 3.
+	int m_responsetimeout = 3;
 
 	// Fixed 3 seconds timeout for a connection attempt
 	int m_conntimeout = 3;
