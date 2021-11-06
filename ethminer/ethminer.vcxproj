@@ -73,7 +73,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
-    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.4.props" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.5.props" />
   </ImportGroup>
   <ImportGroup Label="Shared">
   </ImportGroup>
@@ -93,13 +93,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>$(BOOST_PATH);$(IncludePath)</IncludePath>
     <LibraryPath>$(BOOST_PATH)\lib64-msvc-14.1;$(LibraryPath)</LibraryPath>
-    <TargetName>etherminer.11.4</TargetName>
+    <TargetName>etherminer.11.5</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>$(BOOST_PATH);$(IncludePath)</IncludePath>
     <LibraryPath>$(BOOST_PATH)\lib64-msvc-14.1;$(LibraryPath)</LibraryPath>
     <IntDir>$(Platform)\$(Configuration)\obj\ethminer\</IntDir>
-    <TargetName>etherminer.11.4</TargetName>
+    <TargetName>etherminer.11.5</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -117,7 +117,7 @@
       <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;ETH_ETHASHCUDA;ETH_STRATUM</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>$(TargetDir)libdevcore.lib;$(TargetDir)libethash.lib;$(TargetDir)libethash-cuda.lib;$(TargetDir)libethcore.lib;$(TargetDir)libhwmon.lib;$(TargetDir)libpoolprotocols.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\lib\x64\cudart_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(TargetDir)libdevcore.lib;$(TargetDir)libethash.lib;$(TargetDir)libethash-cuda.lib;$(TargetDir)libethcore.lib;$(TargetDir)libhwmon.lib;$(TargetDir)libpoolprotocols.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cudart_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ForceFileOutput>
       </ForceFileOutput>
       <IgnoreAllDefaultLibraries>
@@ -160,7 +160,7 @@
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>$(TargetDir)libdevcore.lib;$(TargetDir)libethash.lib;$(TargetDir)libethash-cuda.lib;$(TargetDir)libethcore.lib;$(TargetDir)libhwmon.lib;$(TargetDir)libpoolprotocols.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\lib\x64\cudart_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(TargetDir)libdevcore.lib;$(TargetDir)libethash.lib;$(TargetDir)libethash-cuda.lib;$(TargetDir)libethcore.lib;$(TargetDir)libhwmon.lib;$(TargetDir)libpoolprotocols.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cudart_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <LargeAddressAware>true</LargeAddressAware>
       <SetChecksum>true</SetChecksum>
     </Link>
@@ -169,13 +169,13 @@
       <CodeGeneration>compute_35,sm_35</CodeGeneration>
     </CudaCompile>
     <PostBuildEvent>
-      <Command>copy $(TargetPath) C:\Data\Data\SS_Projects\Intelligence\WPE.net\wpe.net.app\bin\x64\Debug\MinerModules\wpe.net.miner.ethereum.11.0.exe
-copy $(TargetPath) C:\Data\Data\SS_Projects\Intelligence\WPE.net\wpe.net.app\bin\x64\Release\MinerModules\wpe.net.miner.ethereum.11.0.exe
+      <Command>copy $(TargetPath) C:\Data\Data\SS_Projects\Intelligence\WPE.net\wpe.net.app\bin\x64\Debug\MinerModules\wpe.net.miner.ethereum.11.5.exe
+copy $(TargetPath) C:\Data\Data\SS_Projects\Intelligence\WPE.net\wpe.net.app\bin\x64\Release\MinerModules\wpe.net.miner.ethereum.11.5.exe
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.4.targets" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.5.targets" />
   </ImportGroup>
 </Project>
