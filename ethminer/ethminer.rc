@@ -51,8 +51,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 0,11,4,97
- PRODUCTVERSION 0,11,4,97
+ FILEVERSION 0,11,5,49
+ PRODUCTVERSION 0,11,5,49
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -68,13 +68,13 @@ BEGIN
         BLOCK "040904b0"
         BEGIN
             VALUE "CompanyName", "SignalPop LLC"
-            VALUE "FileDescription", "wpe.net.etherminer.11.5"
-            VALUE "FileVersion", "0.11.4.97"
+            VALUE "FileDescription", "wpe.net.etherminer.11.6"
+            VALUE "FileVersion", "0.11.5.49"
             VALUE "InternalName", "wpe.net.etherminer.exe"
-            VALUE "LegalCopyright", "Copyright (C) 2018-2021 SignalPop LLC. All rights reserved."
+            VALUE "LegalCopyright", "Copyright (C) 2018-2022 SignalPop LLC. All rights reserved."
             VALUE "OriginalFilename", "wpe.net.etherminer.exe"
             VALUE "ProductName", "wpe.net.etherminer"
-            VALUE "ProductVersion", "0.11.4.97"
+            VALUE "ProductVersion", "0.11.5.49"
         END
     END
     BLOCK "VarFileInfo"
